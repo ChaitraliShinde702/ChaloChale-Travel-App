@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col">
+                <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
+                    <div class="container">
+                    <a class="navbar-brand fw-bold fs-4 d-flex align-items-center gap-2" href="index.html">
+                        <svg width="34" height="34" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <defs>
+                            <linearGradient id="ccLogoGrad" x1="0" y1="0" x2="48" y2="48" gradientUnits="userSpaceOnUse">
+                            <stop offset="0" stop-color="#0f172a"/><stop offset="1" stop-color="#0d9488"/>
+                            </linearGradient>
+                        </defs>
+                        <rect x="2" y="2" width="44" height="44" rx="12" fill="url(#ccLogoGrad)"/>
+                        <path d="M10 35 C 15 30 20 28 24 22 C 27 17 29 14 31 12" stroke="#f59e0b" stroke-width="3.5" stroke-linecap="round" stroke-dasharray="0.5 6" fill="none"/>
+                        <path d="M33 10 L15 29 L24 37 L29 26 Z" fill="#ffffff"/>
+                        </svg>
+                        <span>Chalo<span class="text-warning">Chale</span></span>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto align-items-lg-center">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="destination.html">Destinations</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="packages.html">Packages</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="booking.html">Booking</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item ms-lg-2 mt-2 mt-lg-0 d-flex align-items-center gap-2">
+                            <button type="button" class="btn btn-outline-light position-relative" id="myTripsBtn" title="My Trips">
+                            <i class="fa-solid fa-suitcase-rolling"></i>
+                            <span class="badge rounded-pill bg-warning text-dark position-absolute badge-pill-count" id="tripsBadge" style="display:none">0</span>
+                            </button>
+                            <button type="button" class="btn btn-warning fw-semibold" id="signupBtn">
+                            <i class="fa-solid fa-user me-1"></i><span id="signupBtnText">Sign Up</span>
+                            </button>
+                            <button type="button" class="btn btn-warning fw-semibold" id="loginBtn">
+                            <i class="fa-solid fa-user me-1"></i><span id="loginBtnText">Login</span>
+                            </button>
+                        </li>
+                        </ul>
+                    </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./js/script.js"></script>
+
+</body>
+</html>

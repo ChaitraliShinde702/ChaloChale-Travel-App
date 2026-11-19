@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ChaloChale Travel | Explore Incredible India</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="./css/style.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold fs-4 d-flex align-items-center gap-2" href="index.html">
+        <svg width="34" height="34" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <defs>
+            <linearGradient id="ccLogoGrad" x1="0" y1="0" x2="48" y2="48" gradientUnits="userSpaceOnUse">
+              <stop offset="0" stop-color="#0f172a"/><stop offset="1" stop-color="#0d9488"/>
+            </linearGradient>
+          </defs>
+          <rect x="2" y="2" width="44" height="44" rx="12" fill="url(#ccLogoGrad)"/>
+          <path d="M10 35 C 15 30 20 28 24 22 C 27 17 29 14 31 12" stroke="#f59e0b" stroke-width="3.5" stroke-linecap="round" stroke-dasharray="0.5 6" fill="none"/>
+          <path d="M33 10 L15 29 L24 37 L29 26 Z" fill="#ffffff"/>
+        </svg>
+        <span>Chalo<span class="text-warning">Chale</span></span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="destination.html">Destinations</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="packages.html">Packages</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="booking.html">Booking</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+          <li class="nav-item ms-lg-2 mt-2 mt-lg-0 d-flex align-items-center gap-2">
+            <button type="button" class="btn btn-outline-light position-relative" id="myTripsBtn" title="My Trips">
+              <i class="fa-solid fa-suitcase-rolling"></i>
+              <span class="badge rounded-pill bg-warning text-dark position-absolute badge-pill-count" id="tripsBadge" style="display:none">0</span>
+            </button>
+            <button type="button" class="btn btn-warning fw-semibold" id="signupBtn">
+              <i class="fa-solid fa-user me-1"></i><span id="signupBtnText">Sign Up</span>
+            </button>
+            <button type="button" class="btn btn-warning fw-semibold" id="loginBtn">
+              <i class="fa-solid fa-user me-1"></i><span id="loginBtnText">Login</span>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero + Carousal -->
+  <div class="hero-wrap">
+    <!-- Carousal -->
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img height="600px" src="./images/beaches.jpg" class="d-block w-100" alt="Turquoise beach coastline with palm trees">
+        </div>
+        <div class="carousel-item">
+          <img height="600px" src="./images/mountains.jpg" class="d-block w-100" alt="Snow-capped Himalayan mountain range at sunrise">
+        </div>
+        <div class="carousel-item">
+          <img height="600px" src="./images/nature.webp" class="d-block w-100" alt="Lush green forest and backwater landscape">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- Hero overlay -->
+    <section class="hero-overlay text-white text-center">
+      <div class="container py-5">
+        <span class="badge bg-warning text-dark mb-3 px-3 py-2 rounded-pill">India's most loved travel companion</span>
+        <h1 class="display-4 fw-bold mb-3">Let's Go ChaloChale!</h1>
+        <p class="lead mb-4 col-lg-8 mx-auto">
+          Book unforgettable trips to beaches, mountains, heritage sites and hidden gems &mdash;
+          all in one place.
+        </p>
+
+        <!-- Quick destination search -->
+        <form class="row justify-content-center g-2 mb-4" id="heroSearchForm">
+          <div class="col-12 col-md-7 col-lg-5">
+            <div class="input-group input-group-lg shadow">
+              <span class="input-group-text bg-white border-0"><i class="fa-solid fa-magnifying-glass text-secondary"></i></span>
+              <input type="search" name="q" class="form-control border-0" placeholder="Where do you want to go? e.g. Goa, Ladakh" aria-label="Search destinations">
+              <button class="btn btn-warning fw-semibold" type="submit">Search</button>
+            </div>
+          </div>
+        </form>
+
+        <div class="d-flex flex-wrap justify-content-center gap-3">
+          <a href="destination.html" class="btn btn-warning btn-lg fw-semibold">
+            <i class="fa-solid fa-map-location-dot me-1"></i>Explore Destinations
+          </a>
+          <a href="packages.html" class="btn btn-outline-light btn-lg">
+            <i class="fa-solid fa-suitcase-rolling me-1"></i>View Packages
+          </a>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- Stats -->
+  <section class="py-4 bg-white border-bottom">
+    <div class="container">
+      <div class="row text-center g-3">
+        <div class="col-6 col-md-3">
+          <h3 class="fw-bold text-primary mb-0">500+</h3>
+          <p class="text-secondary mb-0">Destinations</p>
+        </div>
+        <div class="col-6 col-md-3">
+          <h3 class="fw-bold text-success mb-0">50K+</h3>
+          <p class="text-secondary mb-0">Happy Travellers</p>
+        </div>
+        <div class="col-6 col-md-3">
+          <h3 class="fw-bold text-warning mb-0">4.8</h3>
+          <p class="text-secondary mb-0">Average Rating</p>
+        </div>
+        <div class="col-6 col-md-3">
+          <h3 class="fw-bold text-danger mb-0">24/7</h3>
+          <p class="text-secondary mb-0">Support</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us -->
+  <section class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center fw-bold mb-1">Why Choose ChaloChale?</h2>
+      <p class="text-center text-secondary mb-5">Everything you need for a perfect trip, in one app.</p>
+
+      <div class="row g-4 text-center">
+        <div class="col-12 col-md-4">
+          <div class="feature-icon mx-auto mb-3">
+            <i class="fa-solid fa-plane text-primary"></i>
+          </div>
+          <h5 class="fw-bold">Easy Booking</h5>
+          <p class="text-secondary">Book flights, hotels and packages in under 5 minutes with our simple flow.</p>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="feature-icon mx-auto mb-3">
+            <i class="fa-solid fa-hotel text-success"></i>
+          </div>
+          <h5 class="fw-bold">Best Hotels</h5>
+          <p class="text-secondary">Handpicked stays from budget hostels to luxury resorts at fair prices.</p>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="feature-icon mx-auto mb-3">
+            <i class="fa-solid fa-headset text-warning"></i>
+          </div>
+          <h5 class="fw-bold">24/7 Support</h5>
+          <p class="text-secondary">Real humans, real help — our travel experts are always on call.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Popular Destinations -->
+  <section class="py-5">
+    <div class="container">
+      <div class="text-center mb-4">
+        <h2 class="fw-bold mb-1">Popular Destinations</h2>
+        <p class="text-secondary">Handpicked trips loved by thousands of travellers</p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="card destination-card h-100 position-relative">
+            <div class="card-actions">
+              <button type="button" class="btn btn-light wishlist-btn" data-key="kerala" title="Save to wishlist" aria-pressed="false">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+              <button type="button" class="btn btn-light quick-view-btn" data-trip="kerala" title="View details">
+                <i class="fa-solid fa-circle-info"></i>
+              </button>
+            </div>
+            <img src="./images/kerala.jpg" class="card-img-top" alt="Houseboat on Kerala backwaters">
+            <span class="badge bg-success rounded-pill position-absolute top-0 end-0 m-3">Nature</span>
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title fw-bold">Kerala</h5>
+              <p class="card-text text-secondary flex-grow-1">
+                Cruise the serene backwaters, relax on palm-fringed beaches, and experience Ayurveda.
+              </p>
+              <div class="d-flex justify-content-between align-items-center mt-2">
+                <span class="text-warning"><i class="fa-solid fa-star"></i> 4.8</span>
+                <span class="fw-semibold">From &#8377;12,999</span>
+              </div>
+              <a href="booking.html?dest=kerala" class="btn btn-primary w-100 mt-3">Book Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="card destination-card h-100 position-relative">
+            <div class="card-actions">
+              <button type="button" class="btn btn-light wishlist-btn" data-key="ladakh" title="Save to wishlist" aria-pressed="false">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+              <button type="button" class="btn btn-light quick-view-btn" data-trip="ladakh" title="View details">
+                <i class="fa-solid fa-circle-info"></i>
+              </button>
+            </div>
+            <img src="./images/ladakh.jpg" class="card-img-top" alt="Turquoise Pangong Lake in Ladakh">
+            <span class="badge bg-info text-dark rounded-pill position-absolute top-0 end-0 m-3">Mountains</span>
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title fw-bold">Ladakh</h5>
+              <p class="card-text text-secondary flex-grow-1">
+                Moonlit deserts, turquoise lakes and the highest motorable passes on Earth.
+              </p>
+              <div class="d-flex justify-content-between align-items-center mt-2">
+                <span class="text-warning"><i class="fa-solid fa-star"></i> 4.9</span>
+                <span class="fw-semibold">From &#8377;24,999</span>
+              </div>
+              <a href="booking.html?dest=ladakh" class="btn btn-primary w-100 mt-3">Book Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="card destination-card h-100 position-relative">
+            <div class="card-actions">
+              <button type="button" class="btn btn-light wishlist-btn" data-key="varanasi" title="Save to wishlist" aria-pressed="false">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+              <button type="button" class="btn btn-light quick-view-btn" data-trip="varanasi" title="View details">
+                <i class="fa-solid fa-circle-info"></i>
+              </button>
+            </div>
+            <img src="./images/varanasi.jpg" class="card-img-top" alt="Ghats along the Ganges river in Varanasi">
+            <span class="badge bg-warning text-dark rounded-pill position-absolute top-0 end-0 m-3">Heritage</span>
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title fw-bold">Varanasi</h5>
+              <p class="card-text text-secondary flex-grow-1">
+                The spiritual capital of India — sunrise boat rides, ghats and ancient temples.
+              </p>
+              <div class="d-flex justify-content-between align-items-center mt-2">
+                <span class="text-warning"><i class="fa-solid fa-star"></i> 4.7</span>
+                <span class="fw-semibold">From &#8377;6,999</span>
+              </div>
+              <a href="booking.html?dest=varanasi" class="btn btn-primary w-100 mt-3">Book Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center mt-5">
+        <a href="destination.html" class="btn btn-outline-primary btn-lg">View All Destinations</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Packages Teaser -->
+  <section class="py-5 bg-light">
+    <div class="container">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-6">
+          <h2 class="fw-bold mb-3">Ready-made travel packages</h2>
+          <p class="text-secondary">
+            Skip the planning stress. Our experts craft complete itineraries with transport,
+            stays and sightseeing — just pack your bags.
+          </p>
+          <ul class="list-unstyled">
+            <li class="mb-2"><i class="fa-solid fa-check text-success me-2"></i>Expert-curated itineraries</li>
+            <li class="mb-2"><i class="fa-solid fa-check text-success me-2"></i>Transparent pricing, no hidden fees</li>
+            <li class="mb-2"><i class="fa-solid fa-check text-success me-2"></i>Free cancellation up to 7 days before</li>
+          </ul>
+          <a href="packages.html" class="btn btn-primary btn-lg mt-2">Browse Packages</a>
+        </div>
+        <div class="col-lg-6">
+          <div class="card border-0 shadow">
+            <img src="./images/nature.webp" class="card-img" alt="Scenic nature landscape" style="object-fit: cover; height: 320px;">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="py-5">
+    <div class="container">
+      <h2 class="text-center fw-bold mb-5">What Travellers Say</h2>
+      <div class="row g-4">
+        <div class="col-12 col-md-4">
+          <div class="card h-100 border-0 shadow-sm">
+            <div class="card-body">
+              <p class="text-secondary">"Booked our Kerala backwater trip in minutes. The houseboat was even better than the photos. Highly recommend!"</p>
+              <div class="d-flex align-items-center mt-3">
+                <div class="avatar-circle bg-primary text-white me-3">AS</div>
+                <div>
+                  <div class="fw-semibold">Ananya Sharma</div>
+                  <small class="text-secondary">Kerala Package</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="card h-100 border-0 shadow-sm">
+            <div class="card-body">
+              <p class="text-secondary">"Ladakh felt surreal. The team handled permits and stays perfectly — zero stress on our part."</p>
+              <div class="d-flex align-items-center mt-3">
+                <div class="avatar-circle bg-success text-white me-3">RK</div>
+                <div>
+                  <div class="fw-semibold">Rohan Kumar</div>
+                  <small class="text-secondary">Ladakh Expedition</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="card h-100 border-0 shadow-sm">
+            <div class="card-body">
+              <p class="text-secondary">"Varanasi at sunrise is something every Indian should experience. ChaloChale made it happen."</p>
+              <div class="d-flex align-items-center mt-3">
+                <div class="avatar-circle bg-warning text-dark me-3">MP</div>
+                <div>
+                  <div class="fw-semibold">Meera Patel</div>
+                  <small class="text-secondary">Varanasi Weekend</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-5 bg-dark text-white text-center">
+    <div class="container">
+      <h2 class="fw-bold mb-2">Your next adventure is one click away</h2>
+      <p class="text-white-50 mb-4">Create an account and get 10% off your first booking.</p>
+      <a href="booking.html" class="btn btn-warning btn-lg fw-semibold">Start Booking</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-black text-white-50">
+    <div class="container py-4">
+      <div class="row g-4">
+        <div class="col-12 col-md-4">
+          <h5 class="text-white fw-bold d-flex align-items-center gap-2"><img src="./images/chalochale-icon.png" alt="ChaloChale logo" width="26" height="26" class="logo-img"><span>Chalo<span class="text-warning">Chale</span></span></h5>
+          <p class="small">Your trusted travel companion for exploring Incredible India and beyond.</p>
+        </div>
+        <div class="col-6 col-md-2">
+          <h6 class="text-white">Quick Links</h6>
+          <ul class="list-unstyled small">
+            <li><a href="index.html" class="text-white-50 text-decoration-none">Home</a></li>
+            <li><a href="destination.html" class="text-white-50 text-decoration-none">Destinations</a></li>
+            <li><a href="packages.html" class="text-white-50 text-decoration-none">Packages</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md-2">
+          <h6 class="text-white">Company</h6>
+          <ul class="list-unstyled small">
+            <li><a href="about.html" class="text-white-50 text-decoration-none">About Us</a></li>
+            <li><a href="booking.html" class="text-white-50 text-decoration-none">Booking</a></li>
+            <li><a href="contact.html" class="text-white-50 text-decoration-none">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-4">
+          <h6 class="text-white">Get in Touch</h6>
+          <p class="small mb-1"><i class="fa-solid fa-envelope me-2"></i>hello@chalochale.travel</p>
+          <p class="small mb-1"><i class="fa-solid fa-phone me-2"></i>+91 98765 43210</p>
+        </div>
+      </div>
+      <hr class="border-secondary my-3">
+      <p class="text-center small mb-0">&copy; 2026 ChaloChale Travel App | Designed with Bootstrap 5.3</p>
+    </div>
+  </footer>
+
+  <script>
+    // Hero quick search -> destination.html?q=
+    document.getElementById("heroSearchForm").addEventListener("submit", function (e) {
+      e.preventDefault();
+      var q = this.q.value.trim();
+      window.location.href = "destination.html" + (q ? "?q=" + encodeURIComponent(q) : "");
+    });
+  </script>
+  <script src="./js/script.js"></script>
+</body>
+
+</html>
